@@ -1,17 +1,23 @@
 #include<stdio.h>
 int main()
 {
-    int N,i;
-    scanf("%d",&N);
-    while(N>0)
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
     {
-        for(i=1;i<=N;i++)
+        for(j=0;j<n;j++)
         {
-            printf("%d",i);
+            if(i==j)
+            {
+                printf("0");
+            }
+            else
+            {
+                printf("x");
+            }
         }
         printf("
 ");
-        N--;
     }
     return 0;
     
