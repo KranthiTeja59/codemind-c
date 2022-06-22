@@ -6,24 +6,17 @@ int main()
     while(n!=1)
     {
         if(n%5==0)
-        {
-            n/=5;
-        }
+        n/=5;
         else if(n%3==0)
-        {
-           n/=3; 
-        }
+        n/=3;
         else if(n%2==0)
-        {
-            n/=2;
-        }
+        n/=2;
         else
         {
-             printf("Not Ugly Number");
-             x=1;
-             break;
+            printf("Not Ugly Number");
+            x=1;
+            break;
         }
-        
     }
     if(x==0)
     {
